@@ -193,11 +193,11 @@ p {
   }
   
   .fade-out {
-    animation: fadeOut 0.5s ease-out forwards;
+    animation: fadeOut 0.2s ease-out forwards;
   }
   
   .fade-in {
-    animation: fadeIn 0.5s ease-in forwards;
+    animation: fadeIn 0.2s ease-in forwards;
   }
 
   @media screen and (max-width: 600px) {

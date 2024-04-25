@@ -253,13 +253,13 @@
             button.disabled = true; // 버튼을 초기에 비활성화합니다.
 
             setTimeout(() => {
-                button.disabled = false; // 1초 후에 버튼을 활성화합니다.
-            }, 1000);
+                button.disabled = false; 
+            }, 700);
 
             button.addEventListener('click', () => {
                 const selectedChoice = button.dataset.choice;
                 selectedChoices.push(selectedChoice);
-
+                
                 questionContents[currentQuestionIndex].classList.add('fade-out');
                 setTimeout(() => {
                     questionContents[currentQuestionIndex].style.display = 'none';
@@ -271,7 +271,7 @@
                         questionContents[currentQuestionIndex].classList.add('fade-in');
                         setTimeout(() => {
                             questionContents[currentQuestionIndex].classList.remove('fade-in');
-                        }, 500);
+                        }, 300);
                     } else {
                         showResultPage();
                     }
