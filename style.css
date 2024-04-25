@@ -34,7 +34,8 @@ body {
 }
 
 .logo {
-    width: 30rem;
+    width: 20rem;
+    max-width: 40rem;
     margin-bottom: 20px;
 }
 
