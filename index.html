@@ -6,284 +6,293 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <style>
-       
-    </style>
-
 </head>
 
+
 <body>
+    <div class="container">
+        <img src="assets/images/top/type.jpg" class="top-image">
+        <div class="initial-content">
+            <img src="./assets/images/background/main.jpg" alt="SOPTI Logo" class="logo">
+            <h1>SOPTI 유형 테스트</h1>
 
-    <body>
-        <div class="container">
-            <img src="assets/images/top/type.jpg" class="top-image">
-            <div class="initial-content">
-                <img src="./assets/images/background/main.jpg" alt="SOPTI Logo" class="logo">
-                <h1>SOPTI 유형 테스트</h1>
-                <p>나의 습득 행동 유형을 찾아보세요!</p>
-                <button class="start-button">시작하기</button>
-                <button class="button">내 결과 다시 보기</button>
-                <p class="powered-by">powered by SOPT Media Team</p>
-            </div>
-
-            <div class="question-content-1" style="display: none;">
-                <img src="assets/images/questions/question1.jpg" alt="Question Image" class="question-image">
-
-                <button class="choice-button" data-choice="B">나는 비대면 회의가 좋아. 편한 잠옷 차림으로 책상 앞에 앉는다.</button>
-                <button class="choice-button" data-choice="D">회의는 대면이지! 1시간 걸리더라도 만나서 공유할래. 모두의 거주지를 고려하여 회의 장소를 찾아
-                    본다.</button>
-            </div>
-
-            <div class="question-content-2" style="display: none;">
-                <img src="assets/images/questions/question2.jpg" alt="Question Image" class="question-image">
-
-                <button class="choice-button" data-choice="M">해 떠 있는 동안 처리하자! 미라클 모닝까지는 아니더라도 낮 작업을 선호한다.</button>
-                <button class="choice-button" data-choice="N">나는 새벽에 집중이 더 잘 되는데? 남들이 쿨쿨 잠든 새벽에 작업하면 능률이 향상되는
-                    느낌이다!</button>
-            </div>
-
-            <div class="question-content-3" style="display: none;">
-                <img src="assets/images/questions/question3.jpg" alt="Question Image" class="question-image">
-                <button class="choice-button" data-choice="L">제가 할게요! 나는 팀 리더가 되는 것을 망설이지 않는다.</button>
-                <button class="choice-button" data-choice="F">제가 할게요...아무도 안 할 것같아서 울며 겨자 먹기로 조장을 맡는다.</button>
-            </div>
-
-            <div class="question-content-4" style="display: none;">
-                <img src="assets/images/questions/question4.jpg" alt="Question Image" class="question-image">
-                <button class="choice-button" data-choice="J">미리 준비해둔 짐싸기 리스트가 있지! 체크리스트를 하나씩 지우며 순조롭게 챙겨 나간다. </button>
-                <button class="choice-button" data-choice="P"> 이것도 필요할 것 같고... 이것저것 챙기는 데 무언가 빠뜨리는 편이다.</button>
-            </div>
-
-            <div class="result-content" style="display: none;">
-                <div class="result-box" id="result-BMFJ">
-                    <img src="assets/images/results/BMFJ.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 BMFJ 유형입니다!</h2>
-                    <p class="result-description">성실하고 온화하며 팀 활동에 있어 협조하는 것을
-
-                        좋아하는 타입이에요. 다른 사람을 돌보는 데
-                        
-                        많은 관심을 기울이는 다정한 면모가 돋보여요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-BMFP">
-                    <img src="assets/images/results/BMFP.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 BMFP 유형입니다!</h2>
-                    <p class="result-description">여러가지 지식들을 잘 알고 있는 잡학사전형 타입이에요.
-
-                        첫인상은 조용하지만 좋아하는 분야에는
-                        
-                        말을 아끼지 않는 모습이 매력적이에요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-BMLP">
-                    <img src="assets/images/results/BMLP.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 BMLP 유형입니다!</h2>
-                    <p class="result-description">팀 내에서 낙관적이며, 도전하는 것을 좋아하는 타입이에요.
-
-                        자발적이고 현재에 집중하며, 다른 솝트 사람들과의
-                        
-                        직접적인 경험을 통해 배우는 것을 좋아해요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-BMLJ">
-                    <img src="assets/images/results/BMLJ.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 BMLJ 유형입니다!</h2>
-                    <p class="result-description">두려움이 없고 독립적인 타입이에요.
-
-                        주변을 관찰하고 분석 하는 것,
-                        
-                        그리고 문제의 근본적인 원인을 찾아내어 해결하는 것을 즐겨요. 효율 빼면 시체!</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-BNFP">
-                    <img src="assets/images/results/BNFP.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 BNFP 유형입니다!</h2>
-                    <p class="result-description">게을러서 미루긴 하지만, 할 일은 책임감 있게 하는 타입이에요.
-
-                        친밀하고 깊은 연결을 중요하게 여기지만,
-                        
-                        재충전을 위해 혼자만의 시간과 공간도 필요한 타입이에요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-BNLJ">
-                    <img src="assets/images/results/BNLJ.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 BNLJ 유형입니다!</h2>
-                    <p class="result-description">한번 시작한 작업은 끝까지 해내고야 마는 타입이에요.
-
-                        분석적이고 창의적이며 엄청난 추진력을 가지고 있어요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-BNFJ">
-                    <img src="assets/images/results/BNFJ.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 BNFJ 유형입니다!</h2>
-                    <p class="result-description">무의미한 말은 지양하고
-
-                        팀에 필요한 말만 하는 걸 잘하는 타입이에요.
-                        
-                        솝요일 세미나가 끝나고 집에서 끝장나게
-                        
-                        쉴 계획을 세우고 있군요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-BNLP">
-                    <img src="assets/images/results/BNLP.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 BNLP 유형입니다!</h2>
-                    <p class="result-description">비평적인 관점을 가진 뛰어난 전략가 타입이에요.
-
-                        질서 있고 조화로운 환경을 만드는 데에 노력을 아끼지 않아요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-DMFP">
-                    <img src="assets/images/results/DMFP.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 DMFP 유형입니다!</h2>
-                    <p class="result-description">회의를 빨리 끝내고 팀원들이랑
-
-                        즐겁게 놀고 싶어하는 타입이에요.
-                        
-                        당신의 밝은 성격 때문에 주변에 사람이 끊이지 않아요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-DMFJ">
-                    <img src="assets/images/results/DMFJ.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 DMFJ 유형입니다!</h2>
-                    <p class="result-description">꼼꼼하게 확인하는 것을 좋아해요.
-
-                        팀에서 꼭 필요한 역할을 수행하는 타입이에요.
-                        
-                        두려움이 없고 독립적인 성격으로, 주변을 관찰하고 분석하고
-                        
-                        문제의 근본적인 원인을 찾아내어 해결하는 것을 즐겨요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-DMLP">
-                    <img src="assets/images/results/DMLP.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 DMLP 유형입니다!</h2>
-                    <p class="result-description">뛰어난 말솜씨로 팀 프로젝트를 하드 캐리하는 타입이에요.
-
-                        밝은 에너지와 리더십에 모두가 당신을 믿고 따라요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-DMLJ">
-                    <img src="assets/images/results/DMLJ.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 DMLJ 유형입니다!</h2>
-                    <p class="result-description">현실적으로 문제를 파악하고 팀원 설득을 잘하는 타입이에요.
-
-                        외향적이고 활력이 넘치며
-                        
-                        다양한 솝트 사람들과 시간을 보내는 것을 즐겨요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-DNFP">
-                    <img src="assets/images/results/DNFP.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 DNFP 유형입니다!</h2>
-                    <p class="result-description">아이디어 뱅크로, 의견 제시를 많이 하는 타입이에요.
-
-                        동정심이 많고 유대를 중요하게 여기는 모습이
-                        
-                        팀원들의 의지가 돼요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-DNFJ">
-                    <img src="assets/images/results/DNFJ.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 DNFJ 유형입니다!</h2>
-                    <p class="result-description">팀원의 특성을 잘 파악하고 칭찬을 아끼지 않는 타입이에요.
-
-                        특유의 배려심으로 다른 사람들의
-                        
-                        좋은 면을 보려고 노력하는 다정한 마음의 소유자예요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-DNLP">
-                    <img src="assets/images/results/DNLP.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 DNLP 유형입니다!</h2>
-                    <p class="result-description"> 전형적인 분위기 메이커로 팀의 분위기를 책임지는 타입이에요.
-
-                        다양한 솝트 사람들과 교류하는 것을 즐기고
-                        
-                        이야기 나누는 것을 좋아해요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-                <div class="result-box" id="result-DNLJ">
-                    <img src="assets/images/results/DNLJ.jpg" alt="Result Image" class="result-image">
-                    <h2 class="result-title">당신은 DNLJ 유형입니다!</h2>
-                    <p class="result-description">프로젝트가 계획대로 되지 않으면
-
-                        스트레스 받는 욕심 있는 타입이에요.
-                        
-                        성실하고, 자신감 있고, 신뢰할 수 있는 사람으로
-                        
-                        비춰지기 때문에 다른 사람들도 당신을 믿고 따라요.</p>
-                    <button class="restart-button">다시 시작하기</button>
-                </div>
-
-            </div>
+            <button class="start-button">시작하기</button>
+            <button class="button">내 결과 다시 보기</button>
+            <p class="powered-by"> © 2024. SOPT Media Team All Right Reserved.</p>
         </div>
 
+        <div class="question-content-1" style="display: none;">
+            <img src="assets/images/questions/question1.jpg" alt="Question Image" class="question-image">
 
-        <script>
-            const startButton = document.querySelector('.start-button');
-            const initialContent = document.querySelector('.initial-content');
-            const questionContents = document.querySelectorAll('[class^="question-content-"]');
-            const choiceButtons = document.querySelectorAll('.choice-button');
-            const resultContent = document.querySelector('.result-content');
-            const restartButton = document.querySelector('.restart-button');
+            <button class="choice-button" data-choice="B">나는 비대면 회의가 좋아. 편한 잠옷 차림으로 책상 앞에 앉는다.</button>
+            <button class="choice-button" data-choice="D">회의는 대면이지! 1시간 걸리더라도 만나서 공유할래. 모두의 거주지를 고려하여 회의 장소를 찾아
+                본다.</button>
+        </div>
 
-            let currentQuestionIndex = 0;
+        <div class="question-content-2" style="display: none;">
+            <img src="assets/images/questions/question2.jpg" alt="Question Image" class="question-image">
 
-            startButton.addEventListener('click', () => {
-                initialContent.style.display = 'none';
-                questionContents[currentQuestionIndex].style.display = 'block';
-            });
+            <button class="choice-button" data-choice="M">해 떠 있는 동안 처리하자! 미라클 모닝까지는 아니더라도 낮 작업을 선호한다.</button>
+            <button class="choice-button" data-choice="N">나는 새벽에 집중이 더 잘 되는데? 남들이 쿨쿨 잠든 새벽에 작업하면 능률이 향상되는
+                느낌이다!</button>
+        </div>
+
+        <div class="question-content-3" style="display: none;">
+            <img src="assets/images/questions/question3.jpg" alt="Question Image" class="question-image">
+            <button class="choice-button" data-choice="L">제가 할게요! 나는 팀 리더가 되는 것을 망설이지 않는다.</button>
+            <button class="choice-button" data-choice="F">제가 할게요...아무도 안 할 것같아서 울며 겨자 먹기로 조장을 맡는다.</button>
+        </div>
+
+        <div class="question-content-4" style="display: none;">
+            <img src="assets/images/questions/question4.jpg" alt="Question Image" class="question-image">
+            <button class="choice-button" data-choice="J">미리 준비해둔 짐싸기 리스트가 있지! 체크리스트를 하나씩 지우며 순조롭게 챙겨 나간다. </button>
+            <button class="choice-button" data-choice="P"> 이것도 필요할 것 같고... 이것저것 챙기는 데 무언가 빠뜨리는 편이다.</button>
+        </div>
+
+        <div class="result-content" style="display: none;">
+            <div class="result-box" id="result-BMFJ">
+                <img src="assets/images/results/BMFJ.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 BMFJ 유형입니다!</h2>
+                <p class="result-description">성실하고 온화하며 팀 활동에 있어 협조하는 것을
+
+                    좋아하는 타입이에요. 다른 사람을 돌보는 데
+
+                    많은 관심을 기울이는 다정한 면모가 돋보여요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-BMFP">
+                <img src="assets/images/results/BMFP.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 BMFP 유형입니다!</h2>
+                <p class="result-description">여러가지 지식들을 잘 알고 있는 잡학사전형 타입이에요.
+
+                    첫인상은 조용하지만 좋아하는 분야에는
+
+                    말을 아끼지 않는 모습이 매력적이에요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-BMLP">
+                <img src="assets/images/results/BMLP.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 BMLP 유형입니다!</h2>
+                <p class="result-description">팀 내에서 낙관적이며, 도전하는 것을 좋아하는 타입이에요.
+
+                    자발적이고 현재에 집중하며, 다른 솝트 사람들과의
+
+                    직접적인 경험을 통해 배우는 것을 좋아해요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-BMLJ">
+                <img src="assets/images/results/BMLJ.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 BMLJ 유형입니다!</h2>
+                <p class="result-description">두려움이 없고 독립적인 타입이에요.
+
+                    주변을 관찰하고 분석 하는 것,
+
+                    그리고 문제의 근본적인 원인을 찾아내어 해결하는 것을 즐겨요. 효율 빼면 시체!</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-BNFP">
+                <img src="assets/images/results/BNFP.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 BNFP 유형입니다!</h2>
+                <p class="result-description">게을러서 미루긴 하지만, 할 일은 책임감 있게 하는 타입이에요.
+
+                    친밀하고 깊은 연결을 중요하게 여기지만,
+
+                    재충전을 위해 혼자만의 시간과 공간도 필요한 타입이에요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-BNLJ">
+                <img src="assets/images/results/BNLJ.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 BNLJ 유형입니다!</h2>
+                <p class="result-description">한번 시작한 작업은 끝까지 해내고야 마는 타입이에요.
+
+                    분석적이고 창의적이며 엄청난 추진력을 가지고 있어요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-BNFJ">
+                <img src="assets/images/results/BNFJ.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 BNFJ 유형입니다!</h2>
+                <p class="result-description">무의미한 말은 지양하고
+
+                    팀에 필요한 말만 하는 걸 잘하는 타입이에요.
+
+                    솝요일 세미나가 끝나고 집에서 끝장나게
+
+                    쉴 계획을 세우고 있군요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-BNLP">
+                <img src="assets/images/results/BNLP.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 BNLP 유형입니다!</h2>
+                <p class="result-description">비평적인 관점을 가진 뛰어난 전략가 타입이에요.
+
+                    질서 있고 조화로운 환경을 만드는 데에 노력을 아끼지 않아요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-DMFP">
+                <img src="assets/images/results/DMFP.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 DMFP 유형입니다!</h2>
+                <p class="result-description">회의를 빨리 끝내고 팀원들이랑
+
+                    즐겁게 놀고 싶어하는 타입이에요.
+
+                    당신의 밝은 성격 때문에 주변에 사람이 끊이지 않아요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-DMFJ">
+                <img src="assets/images/results/DMFJ.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 DMFJ 유형입니다!</h2>
+                <p class="result-description">꼼꼼하게 확인하는 것을 좋아해요.
+
+                    팀에서 꼭 필요한 역할을 수행하는 타입이에요.
+
+                    두려움이 없고 독립적인 성격으로, 주변을 관찰하고 분석하고
+
+                    문제의 근본적인 원인을 찾아내어 해결하는 것을 즐겨요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-DMLP">
+                <img src="assets/images/results/DMLP.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 DMLP 유형입니다!</h2>
+                <p class="result-description">뛰어난 말솜씨로 팀 프로젝트를 하드 캐리하는 타입이에요.
+
+                    밝은 에너지와 리더십에 모두가 당신을 믿고 따라요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-DMLJ">
+                <img src="assets/images/results/DMLJ.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 DMLJ 유형입니다!</h2>
+                <p class="result-description">현실적으로 문제를 파악하고 팀원 설득을 잘하는 타입이에요.
+
+                    외향적이고 활력이 넘치며
+
+                    다양한 솝트 사람들과 시간을 보내는 것을 즐겨요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-DNFP">
+                <img src="assets/images/results/DNFP.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 DNFP 유형입니다!</h2>
+                <p class="result-description">아이디어 뱅크로, 의견 제시를 많이 하는 타입이에요.
+
+                    동정심이 많고 유대를 중요하게 여기는 모습이
+
+                    팀원들의 의지가 돼요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-DNFJ">
+                <img src="assets/images/results/DNFJ.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 DNFJ 유형입니다!</h2>
+                <p class="result-description">팀원의 특성을 잘 파악하고 칭찬을 아끼지 않는 타입이에요.
+
+                    특유의 배려심으로 다른 사람들의
+
+                    좋은 면을 보려고 노력하는 다정한 마음의 소유자예요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-DNLP">
+                <img src="assets/images/results/DNLP.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 DNLP 유형입니다!</h2>
+                <p class="result-description"> 전형적인 분위기 메이커로 팀의 분위기를 책임지는 타입이에요.
+
+                    다양한 솝트 사람들과 교류하는 것을 즐기고
+
+                    이야기 나누는 것을 좋아해요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+            <div class="result-box" id="result-DNLJ">
+                <img src="assets/images/results/DNLJ.jpg" alt="Result Image" class="result-image">
+                <h2 class="result-title">당신은 DNLJ 유형입니다!</h2>
+                <p class="result-description">프로젝트가 계획대로 되지 않으면
+
+                    스트레스 받는 욕심 있는 타입이에요.
+
+                    성실하고, 자신감 있고, 신뢰할 수 있는 사람으로
+
+                    비춰지기 때문에 다른 사람들도 당신을 믿고 따라요.</p>
+                <button class="restart-button">다시 시작하기</button>
+            </div>
+
+        </div>
+    </div>
 
 
-            let selectedChoices = [];
+    <script>
+        const startButton = document.querySelector('.start-button');
+        const initialContent = document.querySelector('.initial-content');
+        const questionContents = document.querySelectorAll('[class^="question-content-"]');
+        const choiceButtons = document.querySelectorAll('.choice-button');
+        const resultContent = document.querySelector('.result-content');
+        const restartButton = document.querySelector('.restart-button');
 
-            choiceButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const selectedChoice = button.dataset.choice;
-                    selectedChoices.push(selectedChoice);
+        let currentQuestionIndex = 0;
 
+        startButton.addEventListener('click', () => {
+            initialContent.style.display = 'none';
+            questionContents[currentQuestionIndex].style.display = 'block';
+        });
+
+
+        let selectedChoices = [];
+
+        choiceButtons.forEach(button => {
+            button.disabled = true; // 버튼을 초기에 비활성화합니다.
+
+            setTimeout(() => {
+                button.disabled = false; // 1초 후에 버튼을 활성화합니다.
+            }, 1000);
+
+            button.addEventListener('click', () => {
+                const selectedChoice = button.dataset.choice;
+                selectedChoices.push(selectedChoice);
+
+                questionContents[currentQuestionIndex].classList.add('fade-out');
+                setTimeout(() => {
                     questionContents[currentQuestionIndex].style.display = 'none';
+                    questionContents[currentQuestionIndex].classList.remove('fade-out');
                     currentQuestionIndex++;
 
                     if (currentQuestionIndex < questionContents.length) {
                         questionContents[currentQuestionIndex].style.display = 'block';
+                        questionContents[currentQuestionIndex].classList.add('fade-in');
+                        setTimeout(() => {
+                            questionContents[currentQuestionIndex].classList.remove('fade-in');
+                        }, 500);
                     } else {
                         showResultPage();
                     }
-                });
+                }, 500);
             });
+        }
+    );
 
+        function showResultPage() {
+            const resultType = selectedChoices.join('');
+            const resultBox = document.getElementById(`result-${resultType}`);
 
-            function showResultPage() {
-                const resultType = selectedChoices.join('');
-                const resultBox = document.getElementById(`result-${resultType}`);
-
-                if (resultBox) {
-                    resultContent.style.display = 'flex';
-                    resultBox.classList.add('active');
-                } else {
-                    resultContent.style.display = 'flex';
-                    document.getElementById('result-default').classList.add('active');
-                }
+            if (resultBox) {
+                resultContent.style.display = 'flex';
+                resultBox.classList.add('active');
+            } else {
+                resultContent.style.display = 'flex';
+                document.getElementById('result-default').classList.add('active');
             }
+        }
 
-            const restartButtons = document.querySelectorAll('.restart-button');
-            restartButtons.forEach(button => {
-                button.addEventListener('click', restartQuiz);
-            });
+        const restartButtons = document.querySelectorAll('.restart-button');
+        restartButtons.forEach(button => {
+            button.addEventListener('click', restartQuiz);
+        });
 
-            function restartQuiz() {
-                selectedChoices = [];
-                currentQuestionIndex = 0;
-                resultContent.style.display = 'none';
-                const activeResultBox = document.querySelector('.result-box.active');
-                if (activeResultBox) {
-                    activeResultBox.classList.remove('active');
-                }
-                initialContent.style.display = 'block';
-            }       
-        </script>
-    </body>
+        function restartQuiz() {
+            selectedChoices = [];
+            currentQuestionIndex = 0;
+            resultContent.style.display = 'none';
+            const activeResultBox = document.querySelector('.result-box.active');
+            if (activeResultBox) {
+                activeResultBox.classList.remove('active');
+            }
+            initialContent.style.display = 'block';
+        }       
+    </script>
+</body>
 
 </html>
