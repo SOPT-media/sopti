@@ -7,6 +7,7 @@
     <title> SOPTI 유형 검사</title>
     <meta property="og:title" content="SOPTI 유형 검사" /> 
     <meta property="og:image" content="assets/images/icon/icon.png" />
+
     <meta property="og:type" content="website" />
     <meta property="og:description" content="나의 솝트 협업 유형을 찾아보세요!">
     <link rel="stylesheet" href="./style.css">
@@ -281,6 +282,16 @@
 
         function showResultPage() {
             const resultType = selectedChoices.join('');
+
+            if (resultType.length == 4) {
+                gtag('event', 'result_type', {
+                    'result': resultType
+                })
+            }
+
+            if (resultType.length != 4)  {
+                const resultBox = document.getElementById(`result-BMLP}`);    
+            }
             const resultBox = document.getElementById(`result-${resultType}`);
 
             if (resultBox) {
