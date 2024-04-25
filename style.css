@@ -16,7 +16,7 @@ body {
 .container {
     height: 80%;
     max-width: 30rem;
-    padding: 4rem;
+    padding: 2rem;
     background-color: #fff;
     border-radius: 7px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -99,7 +99,8 @@ p {
 
 .question-image {
     width: 100%;
-    margin-bottom: 20px;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
 }
 
 .question-text {
@@ -203,12 +204,10 @@ p {
     .container {
         height: 100%;
         max-width: 100%;
-        padding: 2rem;
-        border-radius: 0;
     }
 
     .logo {
-        max-width: 15rem;
+        max-width: 22rem;
     }
 
     h1 {
@@ -225,14 +224,15 @@ p {
     }
 
     .result-image {
-        max-width: 15rem;
+        max-width: 22rem;
+        margin-bottom: 2rem;
     }
 
     .result-title {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .result-description {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
