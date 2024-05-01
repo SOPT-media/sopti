@@ -145,7 +145,8 @@ p {
 }
 
 .result-image {
-    width: 50rem;
+    max-width: 30rem;
+    width: 30rem;
     max-width: 50rem;
     margin-top: 5rem;
 }
