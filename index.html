@@ -259,6 +259,12 @@
 
             button.addEventListener('click', () => {
                 const selectedChoice = button.dataset.choice;
+
+                if (selectedChoices.includes(selectedChoice)) {
+                    return
+                }
+
+                console.log(selectedChoice)
                 selectedChoices.push(selectedChoice);
                 
                 questionContents[currentQuestionIndex].classList.add('fade-out');
@@ -305,6 +311,7 @@
         }
 
         const restartButtons = document.querySelectorAll('.restart-button');
+        
         restartButtons.forEach(button => {
             button.addEventListener('click', restartQuiz);
         });
